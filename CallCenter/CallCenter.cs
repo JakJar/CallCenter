@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CallCenter.Queues;
 
 namespace CallCenter;
 
@@ -6,11 +7,11 @@ public class CallCenter
 {
     private List<Agent> CallCenterAgents { get; set; }
     private List<Call> ComingCalls { get; set; }
-    private Queue FirstQueue { get; set; }
-    private Queue SecondQueue { get; set; }
+    private HighPriorityQueue HighPriorityQueue { get; set; }
+    private NormalPriorityQueue NormalPriorityQueue { get; set; }
 
     public Queue MostCallsQueue()
     {
-        return FirstQueue.CallsCount() > SecondQueue.CallsCount() ? FirstQueue : SecondQueue;
+        return HighPriorityQueue.CallsCount() > NormalPriorityQueue.CallsCount() ? HighPriorityQueue : NormalPriorityQueue;
     }
 }
