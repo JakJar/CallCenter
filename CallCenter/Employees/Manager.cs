@@ -1,4 +1,4 @@
-﻿namespace CallCenter;
+﻿namespace CallCenter.Employees;
 
 public class Manager : Employee
 {

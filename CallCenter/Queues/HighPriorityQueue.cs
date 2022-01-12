@@ -1,4 +1,6 @@
-﻿namespace CallCenter.Queues;
+﻿using CallCenter.Employees;
+
+namespace CallCenter.Queues;
 
 public class HighPriorityQueue : Queue
 {

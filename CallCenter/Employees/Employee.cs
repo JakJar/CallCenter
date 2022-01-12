@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CallCenter;
+namespace CallCenter.Employees;
 
 public abstract class Employee
 {
