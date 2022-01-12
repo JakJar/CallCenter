@@ -13,4 +13,11 @@ public class Agent : Employee
     {
         return Seniority;
     }
+    
+    public enum AgentSeniority
+    {
+        Level1,
+        Level2,
+        Level3
+    }
 }
